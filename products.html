@@ -1,0 +1,249 @@
+<!-- products.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ActiveFit Sportswear - Explore our range of high-quality sportswear products." />
+  <title>ActiveFit Sportswear | Products</title>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style/global.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  
+  <style>
+    .products-section {
+      margin-top: 100px;
+    }
+
+    .card {
+      border: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-img-top {
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .btn-primary {
+      background-color: #28a745;
+      border: none;
+      padding: 0.6rem 1.5rem;
+      border-radius: 25px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #218838;
+    }
+
+    h2.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0d160f; /* Bootstrap green or tweak as needed */
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #28a745;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+
+    footer {
+      background-color: #111;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <!-- Left: Logo -->
+      <a class="navbar-brand me-4" href="index.html">
+        <img src="images/Black and Green Modern Fitness Gym Logo.png" alt="ActiveFit Logo" height="80" width="130" class="object-fit-cover">
+      </a>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Center and Right sections -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <!-- Center: Main Nav -->
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="lookbook.html">Lookbook</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+        </ul>
+
+        <!-- Right: Login/Register -->
+        <ul class="navbar-nav ms-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="account.html">
+              <i class="fa-solid fa-circle-user fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+
+          <ul class="navbar-nav ms-lg-0 d-flex">
+            <li class="nav-item">
+              <a class="nav-link" href="wishlist.html" title="Wishlist">
+                <i class="fa-regular fa-heart fa-2x"></i>
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-lg-0 d-flex">
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html" title="Cart">
+                <i class="fa-solid fa-cart-shopping fa-2x"></i>
+              </a>
+            </li>
+          </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Products Section -->
+  <section class="container products-section mb-5">
+  
+    <div style="background: linear-gradient(to right, #ffecd2 0%, #a8e6cf 50%, #fcb69f 100%);" class="text-dark text-center py-5 mt-4 rounded">
+      <h2 class="section-title mb-0">Shop by Category</h2>
+    </div>
+  
+    <div class="row g-4 mt-4" data-aos="fade-up" data-aos-delay="200">
+      <!-- Men -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/men.jpeg" class="card-img-top img-fluid"/>
+          <div class="card-body text-center">
+            <h5 class="card-title">Men</h5>
+            <p class="card-text">High-performance gear for men.</p>
+            <a href="products/men.html" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Women -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100 shadow-sm">
+          <img src="images/women.jpeg" class="card-img-top img-fluid" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Women</h5>
+            <p class="card-text">Comfort and style for every move.</p>
+            <a href="products/women.html" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Accessories -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100 shadow-sm">
+          <img src="images/accessories.jpeg" class="card-img-top img-fluid"  />
+          <div class="card-body text-center">
+            <h5 class="card-title">Accessories</h5>
+            <p class="card-text">Essentials that elevate your workout.</p>
+            <a href="products/accessories.html" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100 shadow-sm">
+          <img src="images/child.jpeg" class="card-img-top img-fluid"/>
+          <div class="card-body text-center">
+            <h5 class="card-title">Child</h5>
+            <p class="card-text">Essentials that elevate your workout.</p>
+            <a href="products/child.html" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100 shadow-sm">
+          <img src="images/elderly.avif" class="card-img-top img-fluid"  />
+          <div class="card-body text-center">
+            <h5 class="card-title">Elderly</h5>
+            <p class="card-text">Essentials that elevate your workout.</p>
+            <a href="products/elderly.html" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100 shadow-sm">
+          <img src="images/idk.jpeg" class="card-img-top img-fluid"  />
+          <div class="card-body text-center">
+            <h5 class="card-title">Girl</h5>
+            <p class="card-text">Essentials that elevate your workout.</p>
+            <a href="products/girl.html" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100 shadow-sm">
+          <img src="images/hotman.jpeg" class="card-img-top img-fluid"  />
+          <div class="card-body text-center">
+            <h5 class="card-title">Sweat Proof</h5>
+            <p class="card-text">Essentials that elevate your workout.</p>
+            <a href="products/sweatproof.html" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100 shadow-sm">
+          <img src="images/girl.avif" class="card-img-top img-fluid"  />
+          <div class="card-body text-center">
+            <h5 class="card-title">Activewear</h5>
+            <p class="card-text">Essentials that elevate your workout.</p>
+            <a href="products/activewear.html" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+  
+    </div> <!-- end of row -->
+  
+  </section>
+  
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p class="mb-1">&copy; 2025 ActiveFit Sportswear | Designed by Andy</p>
+    <div>
+      <a href="#" class="me-3"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
